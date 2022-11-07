@@ -1,10 +1,6 @@
 import { isPalindrome, reverseToString } from "./reverse";
 import { fibSeq, isLeapYear, isPrime } from "./number";
 
-
-
-
-
 console.log(reverseToString("This is a reversed string."));
 console.log(fibSeq(12));
 console.log("is 1234 a palindrome?: "+isPalindrome(1234));
