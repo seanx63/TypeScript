@@ -1,6 +1,7 @@
 import { isPalindrome, reverseToString } from "./reverse";
 import { fibSeq, isLeapYear, isPrime } from "./number";
 import { playlist, song} from "./jukebox";
+import { item, warehouse } from "./warehouse";
 
 console.log(reverseToString("This is a reversed string."));
 console.log(fibSeq(12));
@@ -26,3 +27,9 @@ console.log(play1.getRandomSong().getString());
 console.log(play1.getRandomSong().getString());
 console.log(play1.getRandomSong().getString());
 console.log(play1.getRandomSong().getString());
+let i1 = new item("Orange juice", "1a");
+let i2 = new item("Milk","1b");
+let w1 = new warehouse();
+w1.location = "Arizona";
+w1.addItems(i1, i2);
+console.log(`Warehouse in ${w1.location} has [${w1.stock}]`);
