@@ -1,5 +1,6 @@
 import { isPalindrome, reverseToString } from "./reverse";
 import { fibSeq, isLeapYear, isPrime } from "./number";
+import { playlist, song} from "./jukebox";
 
 console.log(reverseToString("This is a reversed string."));
 console.log(fibSeq(12));
@@ -11,3 +12,17 @@ console.log("is 12 a prime number?: "+isPrime(12));
 console.log("is 13 a prime number?: "+isPrime(13));
 console.log("is 2005 a leap year?: "+isLeapYear(2005));
 console.log("is 2004 a leap year?: "+isLeapYear(2004));
+let song1 = new song("Car Seat Headrest", "Beach Life-in-Death");
+let song2 = new song("Rumskib", "Where are the flowers?");
+let song3 = new song("Dismemberment Plan", "Spider in the Snow");
+let s4 = new song("Father John Misty", "I Love You, Honeybear");
+let s5 = new song("CCTV", "Paranoia");
+let s6 = new song("Lift To Experience", "Waiting to Hit");
+let play1 = new playlist();
+play1.addSongs(song1, song2, song3, s4, s5, s6);
+console.log(play1.getRandomSong().getString());
+console.log(play1.getRandomSong().getString());
+console.log(play1.getRandomSong().getString());
+console.log(play1.getRandomSong().getString());
+console.log(play1.getRandomSong().getString());
+console.log(play1.getRandomSong().getString());
